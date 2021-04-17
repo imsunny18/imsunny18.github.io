@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function repeat() {
+            var add = document.getElementById("adv1");
+            var clone = add.cloneNode(true);
+            add.replaceWith(clone);
+
+        }
+        function pricerange(slider, output) {
+            var value = slider.value;
+            output.innerHTML = value.toString();
+
+        }
+
+        function setdate() {
+            document.getElementById("datemin").value = new Date().toDateInputValue();
+            document.getElementById("datemax").value = new Date().toDateInputValue();
+            document.getElementById("datemin").min = new Date().toDateInputValue();
+            document.getElementById("datemax").min = new Date().toDateInputValue();
+
+            var x = document.getElementById("myform");
+            function myfun() {
+                for (var i = 0; i < x.length; i++) {
+                    document.write(x.elements[i].value);
+                }
+
+            }
+            window.onload = setdate();
+        }
+    </script>
+    <link rel="stylesheet" href="indexstyle.css">
+
+
+    <title>Welcome Piha</title>
+</head>
+
+<body>
+
+    <header id="main-header">
+        <div class="container container1 ">
+            <img class="titleimage" src="images/piha_4.jpg">
+            <img class="titleimage2" src="images/piha_5.jpeg">
+            <h1 class="h1" style="top: 5px;">This Is Piha</h1>
+            <h1 class="h2" style="top: 5px;">This Is Beauty</h1>
+            <p class="student">Bhvaik Patel [ID: 1541817]</p>
+            <a class="link" href="http://www.piha.co.nz" target="_blank">Visit Official Piha Website</a>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <aside id="sidebar">
+            <div class="container" id="adv1" style="width: 320px; height: 540px; top: 5px;">
+
+                <div class="vimage1">
+                    <h2 id="vtext1">Switch Camping<br>for Glamping.</h2>
+                    <img id="airnzlogo" src="images/AirNZLogo.png" width="45px" height="45px">
+                    <img id="mappoint" src="images/MapPoint.png" width="23px" height="25px">
+                    <p id="maptxt1">Cape Reinga</p>
+                </div>
+
+
+                <div class="vimage2">
+                    <h2 id="vtext2">Find New Escapes</h2>
+                    <img id="airnzlogo" src="images/AirNZLogo.png" width="45px" height="45px">
+                    <img id="mappoint" src="images/MapPoint.png" width="23px" height="25px">
+                    <p id="maptxt1">The Remarkables</p>
+                </div>
+
+                <div class="vimage3">
+                    <h2 id="vtext3">Discover Pristine<br>Greenery</h2>
+                    <img id="airnzlogo" src="images/AirNZLogo.png" width="45px" height="45px">
+                    <img id="mappoint" src="images/MapPoint.png" width="23px" height="25px">
+                    <p id="maptxt1">Milford Sound</p>
+                </div>
+
+                <div class="vimage4">
+                    <h2 id="vtext4">See New Zealand <br>in a New Light.</h2>
+                    <div class="airnzweb" type="button" onclick="parent.location='https://www.airnewzealand.co.nz/'">
+                        <h4>Find Out</h4>
+                        <h4> More</h4>
+                    </div>
+                    <img id="airnzlogo" src="images/AirNZLogo.png" width="45px" height="45px">
+                    <img id="replay" src="images/Replay.png" width="12px" height="12px" onclick="repeat()">
+                    <img id="airnztext" src="images/airnztext.png" width="170px" height="16px">
+                    <h4 id="student">Bhvaik Patel [ID: 1541817]</h4>
+
+                </div>
+
+            </div>
+            <div>
+                <p class="student1">Bhvaik Patel [ID: 1541817]</p>
+            </div>
+
+        </aside>
+
+        <form id="myform" action="">
+            <!-- 
+                <h1>Make A Booking</h1>
+            <br>
+            <div class="form-group">
+                <label>First Name:</label>
+                <input type="text" name="firstname">
+            </div>
+            <div class="form-group">
+                <label>Last Name:</label>
+                <input type="text" name="lastname">
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="Other"> Other
+
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" name="email">
+            </div>
+            <div class="form-group">
+                <label>Contact:</label>
+                <input type="number" name="Contact">
+            </div>
+            <div class="form-group">
+                <label>Message:</label>
+                <textarea type="text" name="message"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Date Check In:</label>
+                <input type="date" name="check-in">
+            </div>
+            <div class="form-group">
+                <label>Date Check Out:</label>
+                <input type="date" name="check-out">
+            </div>
+            <input class="button" value="Submit" type="submit" name="">
+        -->
+            <h1 style="text-align: center;">Make Booking:</h1>
+
+            <!-- One "tab" for each step in the form: -->
+            <div class="tab">
+                <h2>Booking Details:</h2>
+                <p><input placeholder="First name..." oninput="this.className = ''"></p>
+                <p><input placeholder="Last name..." oninput="this.className = ''"></p>
+                <p><label>Gender:</label>
+                <p><input type="radio" name="gender" value="male"> Male</p>
+                <p><input type="radio" name="gender" value="female"> Female</p>
+                <p><input type="radio" name="gender" value="Other"> Other</p>
+                </p>
+                <p><label>Date Check In:</label>
+                    <input id="datemin" type="date" name="check-in">
+                </p>
+                <p><label>Date Check Out:</label>
+                    <input type="date" name="check-out">
+                </p>
+            </div>
+
+            <div class="tab">
+                <h2>Booking Details:</h2>
+                <!-- <p><input placeholder="E-mail..." oninput="this.className = ''"></p>
+                <p><input placeholder="Phone..." oninput="this.className = ''"></p>-->
+                <p>
+                    <label for="price-min">Price Minimum:</label>
+                    <input type="range" name="price-min" id="price-min" value="50" min="50" max="1000"
+                        onchange="pricerange(this,document.getElementById('minvaluedisplay'))">
+                <h5 id="minvaluedisplay">50</h5>
+                <label for="price-max">Price Maximum:</label>
+                <input type="range" name="price-max" id="price-max" value="1000" min="50" max="1000"
+                    onchange="pricerange(this,document.getElementById('maxvaluedisplay'))">
+                <h5 id="maxvaluedisplay">1000</h5>
+                </p>
+                <p>
+                    <label for="adults">Number of Adults:</label>
+                    <select name="adults" id="noofadults">
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4 </option>
+                        <option value="5"> 5 </option>
+                        <option value="6"> 6 </option>
+                        <option value="7"> 7 </option>
+                        <option value="8"> 8 </option>
+                    </select>
+                </p>
+                <p>
+                    <label for="children">Number of Children:</label>
+                    <select name="children" id="noofchildren">
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4 </option>
+                        <option value="5"> 5 </option>
+                        <option value="6"> 6 </option>
+                    </select>
+
+                </p>
+            </div>
+
+            <div class="tab">
+                <h2>Booking Details:</h2>
+
+                <p><label>Number of Bedrooms:</label>
+                    <input type="number" name="bedrooms" max="5" min="1">
+                </p>
+                <p><label>Room Color (optional):</label>
+                    <input type="color" name="roomcolor">
+                </p>
+                <p><label>Cooking Facilities:</label>
+                <p><input type="radio" name="cooking" value="yes"> Yes</p>
+                <p><input type="radio" name="cooking" value="no"> No</p>
+                <label for="children">Additional Equipments:</label>
+                <select name="children" id="noofchildren">
+                    <option value="surfboard"> Surf Board </option>
+                    <option value="swimminggoggles"> Swimming Goggles </option>
+                    <option value="beachtent"> Beach Tent </option>
+                    <option value="jetboat"> Jet Boat </option>
+                    <option value="swimsuits"> Swimsuit </option>
+                </select>
+
+            </div>
+
+            <div class="tab">
+                <h2>Booking Details:</h2>
+                <p><input placeholder="E-mail..." oninput="this.className = ''"></p>
+                <p><input placeholder="Phone..." oninput="this.className = ''"></p>
+                <br>
+                (Booking confirmation will sent to the above E-mail.)
+
+                <p>
+                    <input type="checkbox" id="myCheck" name="Terms" required>
+                    <input type="submit"> I agree to the Terms and Conditions of the local native conservation.
+                </p>
+            </div>
+
+            <div style="overflow:auto;">
+                <div style="float:right;">
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                </div>
+            </div>
+
+            <!-- Circles which indicates the steps of the form: -->
+            <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+            </div>
+        </form>
+    </div>
+
+
+
+    <footer id="main-footer">
+        <p>Copyright &copy; 2021 Piha Website</p>
+    </footer>
+
+
+    <div style="margin-bottom: 50px;"></div>
+
+
+</body>
+
+<script src="./Java/script.js"></script>
+
+</html>

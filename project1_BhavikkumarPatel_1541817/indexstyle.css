@@ -1,0 +1,588 @@
+*{
+    margin: 0;
+    padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body{
+    font-family: Inconsolata, sans-serif;
+    background-color: rgb(227, 229, 231);
+    color: rgb(31, 52, 110);
+    line-height: 1.7em;
+}
+
+
+.container {
+    width: 90%;
+    height: 300px;
+   
+    overflow: hidden;
+    position: relative;
+}
+.container1{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+#navbar{
+    position: relative;
+  
+    font-size: 3rem;
+    color: darkblue;
+    padding-left: 5%;
+    background-color: rgb(31, 52, 110);
+    color: rgb(227, 229, 231);
+}
+
+#navbar a:hover {
+    background-position: 11px;
+    color: coral;
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+#navbar li{
+    display: inline;
+}
+#navbar a{
+    color: rgb(227, 229, 231);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px;
+}
+
+
+.button{
+    background-color: rgb(105, 105, 105);
+    color: white;
+    font-size: 20px;
+    padding: 10px 13px;
+    border: none;
+}
+
+.button:hover{
+    background-color: rgb(31, 52, 110);
+    color: rgb(227, 229, 231);
+}
+
+
+
+.h1{
+    
+  position: relative;
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 125%;
+  animation: animate 5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  animation-name: headinganimation;
+
+}
+
+.h2{
+    
+  position: relative;
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  animation-name: heading2animation;
+
+}
+
+.student{
+	position: absolute;
+    margin: 10px;
+	text-align: right;
+    right: 10px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 15px;
+    animation-delay: 11s;
+    font-weight: bold;
+	color: rgb(109, 3, 3);
+	animation-name: studentanimation;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	opacity: 0;
+	display: block;
+
+}
+
+.link{
+	position: absolute;
+	text-align-last: left;
+    bottom: 0px;
+    padding: 8px;
+}
+
+.titleimage{
+    animation-name: animation1;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    position: absolute;
+    width: 110%;
+    top: 0px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.titleimage2 {
+    animation-name: animation2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+    position: absolute;
+    width: 110%;
+    opacity: 0%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+
+
+
+.vimage1 {
+	animation: vimage1 ease 4s;
+    position: absolute;
+    opacity: 0;
+    width: 390px;
+    height: 540px;
+    background-image: url('images/Vimage1(Custom).jpg');
+    background-repeat: no-repeat;
+}
+#vtext1{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 2px;
+    top: 170px;
+    left: 55px;
+    color: rgb(255, 166, 0);
+    font-family: 'Lobster', cursive;
+}
+#airnzlogo {
+    left: 268px;
+    position: absolute;
+    top: 8px;
+    animation: airnzlogo 2s;
+}
+#mappoint{
+    position: absolute;
+    right: 345px;
+    top: 500px;
+}
+#maptxt1{
+    position: absolute;
+    left: 50px;
+    top: 500px;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(0, 174, 255);
+}
+
+
+
+.vimage2 {
+	animation: vimage2 ease 4s;
+    position: absolute;
+    animation-delay: 4s;
+    opacity: 0;
+    width: 390px;
+    height: 540px;
+    background-image: url('images/Vimage2(Custom).jpg'); 
+    background-repeat: no-repeat;
+}
+#vtext2{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 2px;
+    top: 280px;
+    left: 50px;
+    color: rgb(255, 166, 0);
+    font-family: 'Lobster', cursive;
+}
+
+.vimage3 {
+	animation: vimage3 ease 4s;
+    position: absolute;
+    animation-delay: 8s;
+    opacity: 0;
+    width: 390px;
+    height: 540px;
+    background-image: url('images/Vimage3(Custom).jpg');
+    background-repeat: no-repeat;
+}
+#vtext3{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 2px;
+    top: 400px;
+    left: 50px;
+    color: rgba(255, 166, 0);
+    font-family: 'Lobster', cursive;
+    
+}
+
+.vimage4 {
+	animation: vimage4 ease 4s forwards;
+    position: absolute;
+    animation-delay: 12s;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-image: url('images/Vimage4(Custom).jpg');
+    background-repeat: no-repeat;
+}
+#vtext4{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 2px;
+    top: 170px;
+    left: 60px;
+    color: rgba(255, 166, 0);
+    font-family: 'Lobster', cursive;
+}
+
+.airnzweb {
+    text-decoration: none;
+    border: 1px solid rgba(49, 1, 104, 0.596);
+    position: absolute;
+    top: 290px;
+    left: 120px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(49, 1, 104);
+    color: whitesmoke ;
+    font-family: Georgia;
+    width: 80px;
+    text-align: center;
+    animation: airnzweb 2s forwards;
+    animation-delay: 14s;
+    opacity: 0;
+
+}
+
+#airnztext{
+    position: absolute;
+    top: 22px;
+    right: 58px;
+    animation: airnztext 2s forwards;
+    animation-delay: 13s;
+    opacity: 0;
+
+}
+
+#replay{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 8px;
+    top: 515px;
+}
+
+#student{
+    position: absolute;
+    text-align: center;
+    top: 500px;
+    left: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation: advstudent 2s;
+    animation-delay: 16s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity: 0;
+
+}
+
+.student1{
+	position: absolute;
+	text-align: right;
+    left: 130px;
+	font-family: sans-serif;
+	font-size: 15px;
+	color: whitesmoke;
+	animation-name: studentanimation1;
+	animation-iteration-count: 1;
+	animation-duration: 2s;
+    animation-delay: 12s;
+	opacity: 0;
+	display: block;
+	animation-direction: bottom;
+}
+
+#main-header{
+
+    background-color: rgb(31, 52, 110);
+    color: rgb(227, 229, 231) ;
+    
+    
+}
+
+.ad1{
+    position: absolute;
+
+}
+
+
+/* Style the form */
+#myform{
+    padding: 20px;
+    border: 2px solid rgb(31, 52, 110);
+    width: 1150px;
+    height: 500px;
+    -webkit-background-composite: border;
+    background-color: #ffffff;
+    min-width: 300px;
+  }
+  
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    margin: 8px;
+    font-size: 17px;
+    font-family: Inconsolata,sans-serif;
+    border: 1px solid #aaaaaa;
+  }
+  #prevBtn{
+      padding: 6px 40px;
+      margin: 8px;
+      background-color: #aaaaaa;
+      color: rgb(31, 29, 29);
+      border: none;
+      display: block;
+      font-size: large;
+      
+  }
+  #nextBtn{
+    padding: 6px 40px;
+    background-color: rgb(31, 52, 110);
+    color: rgb(255, 254, 254);
+    display: block;
+    border: none;
+    font-size: larger;
+}
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: rgb(31, 52, 110);
+  }
+
+
+
+
+
+
+
+
+
+#sidebar {
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes animation1{
+   from{opacity: 0; margin-top: 300px;}
+    to{opacity: 1; margin-top: 0px;}
+
+   /* 0% {opacity: 0; z-index: 1; margin-top: 300px;}
+    50% {opacity: 1; z-index: 1; margin-top: 0px;}
+    100% {opacity: 1; z-index: 0;}*/
+}
+@keyframes animation2{
+    from{opacity: 0; margin-left: 1000px;}
+    to{opacity: 1; margin-left: 0px;}
+}
+
+@keyframes headinganimation {
+  0% {
+    background-position: -500%;
+  }
+  50% {
+  	font-size: 40px;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+@keyframes heading2animation {
+  0% {
+    background-position: -500%;
+  }
+  50% {
+  	font-size: 30px;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+
+@keyframes studentanimation{
+    0% {opacity: 0; margin-left: 1000px;}
+    100%{opacity: 1; margin-left: 0px;}
+
+}
+
+@keyframes studentanimation1{
+    0% {opacity: 0; margin-bottom: 500px;}
+    100%{opacity: 1; margin-bottom: 0px;}
+
+}
+
+
+/*@keyframes vtext1 {
+    0% {opacity:0;}
+    10% {opacity: 1;}
+    90% {opacity: 1;}
+    100%{opacity: 0;}
+}*/
+@keyframes vimage1 {
+    0% {opacity:0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+
+
+@keyframes airnzlogo {
+    from{opacity: 0; margin-left: 1000px;}
+    to{opacity: 1; margin-left: 0px;}
+}
+
+
+
+/*@keyframes vtext2 {
+    0% {opacity:0;}
+    10% {opacity: 1;}
+    90% {opacity: 1;}
+    100%{opacity: 0;}
+}*/
+@keyframes vimage2 {
+    0% {opacity:0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+    }
+
+
+
+/*@keyframes vtext3 {
+    0% {opacity:0;}
+    10% {opacity: 1;}
+    90% {opacity: 1;}
+    100%{opacity: 0;}
+}*/
+@keyframes vimage3 {
+    0% {opacity:0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+    }
+
+
+
+/*@keyframes vtext4 {
+    0% {opacity:0;}
+    10% {opacity: 1;}
+    90% {opacity: 1;}
+    100%{opacity: 1;}
+}*/
+@keyframes vimage4 {
+    0% {opacity:0;}
+    50% {opacity: 1;}
+    100% {opacity: 1;}
+    }
+
+@keyframes airnzweb {
+    from{opacity: 0; margin-top: 1000px;}
+    to{opacity: 1; margin-top: 0px;}
+}
+
+@keyframes airnztext {
+    from{opacity: 0; margin-left: 1000px;}
+    to{opacity: 1; margin-left: 0px;}
+}
+
+@keyframes advstudent {
+    from {opacity: 0;}
+    to {opacity: 1;}
+	from { color: rgb(255, 0, 0); }
+	to {color: rgb(255, 251, 0); }
+}
+    
+
+
+.google{
+    text-decoration: none;
+    border: 1px solid red;
+    margin-left: 100px;
+    padding: 10px;
+    border-radius: 50% 50% 50% 50%;
+    background-color: red;
+}
